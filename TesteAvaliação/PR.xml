@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TesteDweb2019</keyname>
+        <title>Teste de avaliação</title>
+        <supervisor  homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
+        <bdate>16-01-2020</bdate>
+        <edate>16-01-2020</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>PG41078</identifier>
+            <name>João Pedro Barros Sá</name>
+            <email>jpb.sa@hotmail.com</email>
+            <git>https://github.com/jpbsa98</git>
+        </worker>
+    </workteam>
+    
+    
+    <abstract>
+        
+        <p>
+            Neste PR encontra-se os ficheiros da resolução do teste e como correr os servidores.
+            Ex1.
+                O ex1 usa um servidor em mongo, o ficheiro original foi convertido de xml para json usando um conversor online.
+                De modo a manter o nome da base de dados e coleçoes use:
+                mongoimport --db Musicas --collection obras --jsonArray musica.json
+                Corre em localhost:3000/
+            Ex2. O ex2 corre no localhost:3000/
+        </p>
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="Exclav">Exercicio 2</deliverable>
+        <deliverable path="obrasApi">Exercicio1</deliverable>
+        <deliverable path="Respostas 2.txt">Respostas ao exercicio 2.1</deliverable>
+        <deliverable path="musica.json">Ficheiro Json</deliverable>
+    </deliverables>
+</pr>

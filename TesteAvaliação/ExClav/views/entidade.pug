@@ -1,0 +1,55 @@
+extends layout
+block content
+    address
+        a(href="http://localhost:3000/") HomePage
+    .w3-container
+        h1 Lista de entidades
+        table.w3-table-all
+            tr
+                th estado
+                th sigla
+                th sioe
+                th designacao
+                th internacional
+                tr
+                    td=lista.estado
+                    td=lista.sigla
+                    td=lista.sioe
+                    td=lista.designacao
+                    td=internacional
+        h1 Lista de tipologias a que a entidade pertence
+        table.w3-table-all
+            tr
+                th sigla
+                th designacao
+                th id
+                th Ver tipologia
+            each tip in lista1
+                tr
+                    td=tip.sigla
+                    td=tip.designacao
+                    td=tip.id
+                    td
+                        button.w3-circle.w3-blue-grey(onclick="VerTipologia('"+tip.sigla+"')") Ver
+        h1 Lista de Processos que a entidade é dona
+        table.w3-table-all
+            tr
+                th Código
+                th Titulo
+            each don in lista2
+                tr
+                    td=don.codigo
+                    td=don.titulo
+        h1 Lista de Processos que a entidade participa
+        table.w3-table-all
+            tr
+                th Tipo de Participação
+                th Código
+                th Titulo
+            each part in lista3
+                tr
+                    td=part.tipoPar
+                    td=part.codigo
+                    td=part.titulo
+    address
+        a(href="http://localhost:3000/") HomePage
